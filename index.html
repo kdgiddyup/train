@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+	    <meta name="keywords" content="">
+	    <meta name="description" content="">
+	    <meta name="author" content="">
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta property="og:image" content=""/>
+	    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+	    <!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	    <script src="https://www.gstatic.com/firebasejs/3.7.2/firebase.js"></script>
+
+	    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+	    <script type="text/javascript" src="assets/script/javascript.js"></script>
+	    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+	  <title></title>
+	 </head>
+	 <body>
+		<div class="container">
+			<div class="row">
+				<div class="jumbotron col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+					<h1>Train schedule</h1>
+				</div>
+			</div><!-- /header row-->
+			<div class="row">
+				<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+					<div class="panel panel-danger">
+						<div class="panel-heading">
+						Current train schedule
+						</div>
+						<div class="panel-body">
+						<table class="table table-striped table-hover" id="trainTable">
+							<thead>
+								<th>Train</th>
+								<th>Destination</th>
+								<th>Frequency (min)</th>
+								<th>Next Arrival</th>
+								<th>Minutes Away</th>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+						</div>
+					</div><!-- end schedule panel -->
+				</div><!-- /table column -->
+			</div> <!-- /table row-->
+
+			<div class="row">
+				<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+					<div class="panel panel-danger">
+						<div class="panel-heading">
+						Add train
+						</div>
+						<div class="panel-body">
+							<form>
+		  						<div class="form-group">
+		    						<label for="trainInput">Train Name</label>
+		    						<input type="text" class="form-control" id="trainInput" placeholder="Train name">
+		  						</div>
+		  						<div class="form-group">
+		    						<label for="destinationInput">Destination</label>
+		    						<input type="text" class="form-control" id="destinationInput" placeholder="Where is it headed?">
+								</div>
+								<div class="form-group">
+		    						<label for="firstTimeInput">First Train Time</label>
+		    						<input type="time" class="form-control" id="firstTimeInput">
+								</div>
+								<div class="form-group">
+		    						<label for="frequencyInput">Train frequency</label>
+		    						<input type="number" class="form-control" id="frequencyInput" placeholder="Time in minutes">
+								</div>
+								<button type="button" id="trainSubmit" class="btn btn-danger navbar-btn">Submit</button>
+							</form>
+						</div>
+					</div>
+
+
+		</div><!-- end container -->
+
+	 </body>
+	 </html>
