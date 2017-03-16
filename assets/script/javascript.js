@@ -31,6 +31,10 @@ $("#trainSubmit").on("click",function(event){
 	// don't reload
 	event.preventDefault();
 	// collect inputs into an array
+	formSubmit();
+}); // end submit function	
+	
+function formSubmit(){
 	var inputs = $("input");
 
 	// we'll check inputs for empties
@@ -61,7 +65,7 @@ $("#trainSubmit").on("click",function(event){
 		$("#firstTimeInput").val('').removeClass("empty");
 		$("#frequencyInput").val('').attr("placeholder","Time in minutes").removeClass("empty");
 	} 
-}); // end submit function
+}
 
 // this is the first code executed
 // grab existing data from firebase
