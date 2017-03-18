@@ -99,7 +99,7 @@ db.ref().on('child_added',function(childSnapshot){
 	});	
 
 //create interval to auto-update train times once per minute
-var autoCheck = setInterval(updateTimes,10000);
+var autoCheck = setInterval(updateTimes,60000);
 
 }) // end ready function
 
