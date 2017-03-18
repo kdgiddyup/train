@@ -1,4 +1,11 @@
+body {
+	background-image: url(../images/trainbg.jpg);
+	background-size: cover;
+}
 .empty {
 	font-color: red;
 	font-weight: bold;
+}
+.container {
+	opacity: .9;
 }
